@@ -1,0 +1,199 @@
+****************************************
+CS 151                       Jonathan Le
+Exam 3	                        11/27/17
+****************************************
+Section 1: Syntax
+1)Initialize two char arrays to “Initial” in different ways. (Initialization is the process of declaring and assigning a value to a variable in a single step.)
+int main()
+{
+char initial[7] = {initial[3] + initial[4]};
+}
+2)Write a statement(s) that will continually display “Why?” on separate lines.
+int main()
+{
+String y = “Why”;
+While (y == “Why”)
+ {
+    cout << y << endl; 
+ }
+cin.get();
+}
+3)Given an int variable, n, that has been initialized, write a statement(s) that will the display    the sum of squares from 1 to n.
+int main(double square, int i)
+{
+  int n = 10;
+  i = 1;
+  square = i*i;
+  for(i = 1; i <= n; ++i)
+  {
+    square = i*i;
+    i+=square;
+  }
+   cout << i;
+   return 0;
+ } 
+  
+
+4)Given a char array, str, initialized to “ADER”, write a statement(s) that will display two four letter words using only str (You can repeat letters).
+int main()
+{
+char str[5] = {‘A’, ‘D’, ‘E’, ‘R’, ‘\0’};
+cout << “ADER” << str << endl;
+return 0;
+}
+
+5)Given a string variable, str, that has been initialized, write a statement(s) that will display str forward and backwards on the same line without any delimiters between the characters. 
+int main()
+{
+char str[4] = {‘s’, ‘t’, ‘r’, ‘\0’};
+char strings[4]; = “str”;
+char s;
+int h, i, index;
+index = strlen(str);
+for(h = 0; i = index – 1; h < len/2;++h, --i)
+{
+  s = str[h];
+  str[h] = str[i];
+  str[i] = s;
+}
+cout << str << strings;
+return 0;
+}
+
+6)Given an int variable, n, that has been initialized, write a statement(s) that will displays the number of factors of n. 
+int main()
+{
+  int n = 25;
+  int i = 1;
+  for(i = 1; i <= n; ++i)
+    {
+      if(n % i == 0)
+      cout << i << endl;
+    }
+  return 0;
+}
+
+7)Write a statement(s) that continually prompt a user to enter a word that consists only of lowercase letters (use a string variable).
+int main()
+{
+  char str[7] = {‘L’, ‘e’, ‘t’, ‘t’, ‘e’, ‘r’ ‘\0’};
+  char a = str[0];
+  char b;
+  for (char a = 0, b; a < 0; a++, b++)
+  {
+    b = str[0];
+    int tolower(int a);
+    ++str[0];
+   }
+   cout << str[0] << str[1] << str[2] << str[3] << str[4] << str[5] << endl;
+   return 0;
+ }
+8)Given an int array, nums, that has n elements, write a statement(s) that will store the first n multiples of 4 excluding those that are also multiples of 3 and not 5 in nums.
+int main()
+{
+  int n;
+  int nums[n] = {20, 40, 60, 80, 100};
+  cout << num[0] << num[1] << endl;
+
+1)Given input {4} 
+int n, i = 0, j; char c; cin >> n; 
+while(i < n) 
+{ for(j = i, c = 'A';j < n;j += 1,c += 1) {
+ cout << c; } 
+cout << '\n'; i += 1; } 
+
+Steps	int n	i = 0	int j	char c	i < n	j = i	c = ‘A’	j < n	j+=1	c+=1	i+=1	Display
+1	4											
+2					T							
+3								T				
+4									1			4
+5		0										
+6					T							
+7						T						
+8											1	
+9												1
+10			4									
+11						F						
+12												4
+13				char c[4]								
+14							T					
+15										1 +’A’		
+16												1 + ‘A’
+17												
+18												
+19												
+20												
+21												
+22												
+23												
+24												
+25												
+26												
+27												
+28												
+29												
+
+2)blank int val[6] = {3,0,2}; 
+for(int i = 3,j = 0;i < 6;i += 1) 
+{ val[i] = val[i-2] + val[i-3]; 
+cout << val[j] << '' ''<< val[j+1] << '' ''; 
+if(i < 4) { j += 2; } 
+else { j += 1; } }
+
+Steps	int val	inti	intj	i <6	i+=1	val[i]	val[j]	val[j+1] i < 4	j+=2	j+=1	Display
+1	int val[6]											
+2						val[3]						
+3							val[0]					
+4								val[1]				
+5												3
+6		3										
+7												
+8				T								
+9					4							
+10									   F			
+11												4
+12			 0									
+13										 2		
+14											 3	
+15											  	3
+16												
+17												
+18												
+19												
+20												
+21												
+
+
+Write the function definition of the bool function named IsPalindrome() that takes a string named str as a parameter.
+It returns true if str is a palindrome; otherwise, it returns false.
+
+bool IsPalindrome(char& str);
+
+int main()
+{
+  char str = 'str';
+  char word;
+  char rev = 0;
+  bool IsPalindrome(char word);
+
+  cout << str;
+  
+  word = str;
+
+  do
+  {
+    word = str % 10;
+    rev = (rev * 10) + word;
+    str = str / 10;
+  }while (str != 0);
+  
+  cout << "The reverse string is " << rev << endl;
+  
+  if (word == rev)
+  cout << "The string is a Palindrome" << "\n";
+  else
+  cout << "The string is not a Palindrome" << "\n";
+  
+  return 0;
+}
+
