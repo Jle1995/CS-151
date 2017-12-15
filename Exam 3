@@ -94,6 +94,7 @@ int main()
   int n;
   int nums[n] = {20, 40, 60, 80, 100};
   cout << num[0] << num[1] << endl;
+}
 
 1)Given input {4} 
 int n, i = 0, j; char c; cin >> n; 
