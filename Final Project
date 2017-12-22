@@ -1,6 +1,15 @@
+**********
+//Name: Jonathan Le
+//Creation: 12/15/2017
+//Description: The final project on connect four.
+//Version: Final Project
+**********
+
+
 #include <iostream>
 
 using namespace std;
+
 
 
 //Name: ConnectVertical()
