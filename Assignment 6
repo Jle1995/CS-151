@@ -1,0 +1,49 @@
+***********************************
+//Name: Jonathan Le
+//Creation: 12/09/17
+//Description: A file function of Cat Command
+//Version: Assignment 6
+***********************************
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+
+void type()
+{
+  string filename;
+  ifstream file;
+  
+  cin >> filename;
+  
+  ifstream file1 (filename);
+  
+  if (file1.is_open)
+  {
+    cout << "file does not exist";
+  }
+  else
+  {
+    while ( getline (file1,name))
+    {
+      cout << line << '\n';
+    }
+    file1.close ();
+  }
+}
+/*
+  file.open(filename);
+  if(!file.is_open())
+  {
+    cout << "file does not exist";
+  }
+}
+*/
+int main()
+{
+  cout << "Enter a filename";
+  type();
+  return;
+}
