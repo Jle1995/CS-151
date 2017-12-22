@@ -1,0 +1,51 @@
+CS 151											Jonathan Le
+Prof Reid										12/11/2017
+Section 1: Syntax Write ONLY the statements requested and required.
+1) Initialize three char arrays to “Initial” in different ways. (Initialization is the process of declaring and assigning a value to a variable in a single step.)
+char initial[3] = {‘J’, ‘T’, ‘L’};
+2) Write the declaration of a struct named Grade that has a double and a string as members named gpa and letter respectively. struct Grade 
+{
+double gpa;
+string gpa;
+};
+Grade Class1;
+Grade Class2;
+Grade Class3;
+  
+3) Given a double pointer variable, e, that has been declared, write a statement(s) that perform a single dynamic memory allocation and assigns it 2.71828.
+double * e;
+e = new float;
+*e = 2.71828;
+delete e;
+
+4) Given a double array, num, that has been initialized consisting of 10 elements and a double pointer variable, ptr, that has be declared, write a statement(s) that assigns the address of num to ptr, and then, double each element of num using only ptr (you cannot use num int the assignments).
+double *ptr;
+double num[10];
+ptr = new double[10];
+num = &ptr;
+ptr = double[0];
+ptr = double[1];
+ptr = double[2];
+ptr = double[3];
+ptr = double[4];
+ptr = double[5];
+ptr = double[6];
+ptr = double[7];
+ptr = double[8];
+ptr = double[9];
+ptr = double[10];
+5) Given a string pointer variable, str, that has been dynamically allocated for a block, write a statement(s) that will deallocate str.
+string *ptr;
+ptr = new string[0];
+delete [] ptr;
+6) Given an int pointer variable, t, that has been declared, write a statement(s) that performs a block dynamic memory allocation of 15 and assigns it the first 15 positive even integers (2 is the first number). int* t;
+t = new int [15];
+*t = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30};
+7) Given an int, n, that has been initialized and an int pointer variable, ptr, that has be declared, write a statement(s) that assigns the address of n to ptr, and then, assign 3 more than the four times n to n using only ptr (you cannot use n int the assignment). int* ptr, n;
+ptr = &n;
+4*ptr + 3;
+
+8) Given a char pointer variable, ch, that has been dynamical allocated for a single element, write a statement(s) that will deallocate ch.
+char *ch[1];
+ch = new char [1];
+delete [] ch;
