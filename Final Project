@@ -391,7 +391,7 @@ int ConnectVertical(int Column[], char &Red, char &Blue,)
          cout << "O wins the game\n";
    }
        
-   return bool;
+   return 0;
 
 }
 
